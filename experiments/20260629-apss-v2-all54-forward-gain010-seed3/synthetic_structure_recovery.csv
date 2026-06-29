@@ -1,0 +1,13 @@
+dataset_id,seed,selected_base_model,true_nonmonotone,pred_nonmonotone,nonmonotone_precision,nonmonotone_recall,nonmonotone_f1,true_interactions,pred_interactions,interaction_precision,interaction_recall,interaction_f1,false_complexity_count
+synthetic_mixed_structure,0,M5_full_flexible,g1,g1,1.0,1.0,1.0,g2:g5;g3:g6,g2:g5,1.0,0.5,0.6666666666666666,0
+synthetic_mixed_structure,1,M5_full_flexible,g1,g1,1.0,1.0,1.0,g2:g5;g3:g6,g2:g5;g3:g6,1.0,1.0,1.0,0
+synthetic_mixed_structure,2,M5_full_flexible,g1,g1;g3,0.5,1.0,0.6666666666666666,g2:g5;g3:g6,g2:g5,1.0,0.5,0.6666666666666666,1
+synthetic_monotone_additive,0,M1_linear_additive,,,1.0,1.0,1.0,,,1.0,1.0,1.0,0
+synthetic_monotone_additive,1,M1_linear_additive,,,1.0,1.0,1.0,,,1.0,1.0,1.0,0
+synthetic_monotone_additive,2,M1_linear_additive,,,1.0,1.0,1.0,,,1.0,1.0,1.0,0
+synthetic_nonmonotone_marginals,0,M3_nonmonotone_additive,g1;g2,g1;g2,1.0,1.0,1.0,,,1.0,1.0,1.0,0
+synthetic_nonmonotone_marginals,1,M3_nonmonotone_additive,g1;g2,g1;g2,1.0,1.0,1.0,,,1.0,1.0,1.0,0
+synthetic_nonmonotone_marginals,2,M3_nonmonotone_additive,g1;g2,g1;g2,1.0,1.0,1.0,,,1.0,1.0,1.0,0
+synthetic_sparse_interactions,0,M5_full_flexible,,,1.0,1.0,1.0,g1:g2;g3:g4,g1:g2;g3:g4,1.0,1.0,1.0,0
+synthetic_sparse_interactions,1,M1_linear_additive,,,1.0,1.0,1.0,g1:g2;g3:g4,,0.0,0.0,0.0,0
+synthetic_sparse_interactions,2,M4_sparse_interaction,,,1.0,1.0,1.0,g1:g2;g3:g4,g1:g2;g3:g4,1.0,1.0,1.0,0

@@ -1,0 +1,96 @@
+# APSS Proof-of-Concept Run
+
+## Material Passport
+
+- Origin Skill: academic-research-suite / experiment-agent
+- Origin Mode: run
+- Verification Status: ANALYZED
+- Version Label: apss_poc_v1
+- Runtime Seconds: 0.89
+
+## Configuration
+
+- groups: `synthetic_structure_recovery, monotone_classification, polish_research_units, qs_university_rankings, wine_quality`
+- seeds per dataset: `5`
+- ridge alpha: `1.0`
+- max interactions: `4`
+- complexity lambda: `0.02`
+
+## Files
+
+- `split_results.csv`: every dataset/seed/model result.
+- `summary_by_dataset_model.csv`: mean/std summary.
+- `apss_selection_frequencies.csv`: selected base model frequencies.
+- `synthetic_structure_recovery.csv`: structure recovery diagnostics for synthetic datasets.
+
+## APSS Selection Frequencies
+
+| group | dataset_id | selected_base_model | count | frequency |
+| --- | --- | --- | --- | --- |
+| monotone_classification | mcs_bcc | M2_monotone_additive | 1 | 0.2000 |
+| monotone_classification | mcs_bcc | M4_sparse_interaction | 3 | 0.6000 |
+| monotone_classification | mcs_bcc | M5_full_flexible | 1 | 0.2000 |
+| monotone_classification | mcs_cev | M1_linear_additive | 1 | 0.2000 |
+| monotone_classification | mcs_cev | M4_sparse_interaction | 2 | 0.4000 |
+| monotone_classification | mcs_cev | M5_full_flexible | 2 | 0.4000 |
+| monotone_classification | mcs_cpu | M1_linear_additive | 1 | 0.2000 |
+| monotone_classification | mcs_cpu | M3_nonmonotone_additive | 1 | 0.2000 |
+| monotone_classification | mcs_cpu | M4_sparse_interaction | 1 | 0.2000 |
+| monotone_classification | mcs_cpu | M5_full_flexible | 2 | 0.4000 |
+| monotone_classification | mcs_dbs | M1_linear_additive | 2 | 0.4000 |
+| monotone_classification | mcs_dbs | M2_monotone_additive | 1 | 0.2000 |
+| monotone_classification | mcs_dbs | M4_sparse_interaction | 2 | 0.4000 |
+| monotone_classification | mcs_era | M1_linear_additive | 5 | 1.0000 |
+| monotone_classification | mcs_esl | M1_linear_additive | 5 | 1.0000 |
+| monotone_classification | mcs_lev | M1_linear_additive | 5 | 1.0000 |
+| monotone_classification | mcs_mmg | M1_linear_additive | 5 | 1.0000 |
+| monotone_classification | mcs_mpg | M1_linear_additive | 5 | 1.0000 |
+| polish_research_units | polish_research_units_all | M1_linear_additive | 5 | 1.0000 |
+| polish_research_units | polish_research_units_hs | M1_linear_additive | 2 | 0.4000 |
+| polish_research_units | polish_research_units_hs | M2_monotone_additive | 1 | 0.2000 |
+| polish_research_units | polish_research_units_hs | M3_nonmonotone_additive | 2 | 0.4000 |
+| polish_research_units | polish_research_units_njn | M1_linear_additive | 4 | 0.8000 |
+| polish_research_units | polish_research_units_njn | M3_nonmonotone_additive | 1 | 0.2000 |
+| polish_research_units | polish_research_units_nz | M1_linear_additive | 3 | 0.6000 |
+| polish_research_units | polish_research_units_nz | M4_sparse_interaction | 2 | 0.4000 |
+| polish_research_units | polish_research_units_si | M1_linear_additive | 2 | 0.4000 |
+| polish_research_units | polish_research_units_si | M3_nonmonotone_additive | 3 | 0.6000 |
+| polish_research_units | polish_research_units_ta | M3_nonmonotone_additive | 1 | 0.2000 |
+| polish_research_units | polish_research_units_ta | M4_sparse_interaction | 4 | 0.8000 |
+| qs_university_rankings | qs_2020_top500_common6 | M1_linear_additive | 5 | 1.0000 |
+| qs_university_rankings | qs_2022_top500_common6 | M1_linear_additive | 5 | 1.0000 |
+| qs_university_rankings | qs_2026_top500_all10 | M1_linear_additive | 2 | 0.4000 |
+| qs_university_rankings | qs_2026_top500_all10 | M2_monotone_additive | 1 | 0.2000 |
+| qs_university_rankings | qs_2026_top500_all10 | M3_nonmonotone_additive | 1 | 0.2000 |
+| qs_university_rankings | qs_2026_top500_all10 | M5_full_flexible | 1 | 0.2000 |
+| qs_university_rankings | qs_2026_top500_common6 | M1_linear_additive | 3 | 0.6000 |
+| qs_university_rankings | qs_2026_top500_common6 | M3_nonmonotone_additive | 1 | 0.2000 |
+| qs_university_rankings | qs_2026_top500_common6 | M5_full_flexible | 1 | 0.2000 |
+| synthetic_structure_recovery | synthetic_mixed_structure | M3_nonmonotone_additive | 2 | 0.4000 |
+| synthetic_structure_recovery | synthetic_mixed_structure | M5_full_flexible | 3 | 0.6000 |
+| synthetic_structure_recovery | synthetic_monotone_additive | M1_linear_additive | 5 | 1.0000 |
+| synthetic_structure_recovery | synthetic_nonmonotone_marginals | M3_nonmonotone_additive | 5 | 1.0000 |
+| synthetic_structure_recovery | synthetic_sparse_interactions | M1_linear_additive | 1 | 0.2000 |
+| synthetic_structure_recovery | synthetic_sparse_interactions | M4_sparse_interaction | 4 | 0.8000 |
+| wine_quality | wine_quality_combined | M1_linear_additive | 4 | 0.8000 |
+| wine_quality | wine_quality_combined | M2_monotone_additive | 1 | 0.2000 |
+| wine_quality | wine_quality_red | M2_monotone_additive | 5 | 1.0000 |
+| wine_quality | wine_quality_white | M1_linear_additive | 2 | 0.4000 |
+| wine_quality | wine_quality_white | M4_sparse_interaction | 3 | 0.6000 |
+
+## Synthetic Structure Recovery
+
+| dataset_id | nonmonotone_precision | nonmonotone_recall | nonmonotone_f1 | interaction_precision | interaction_recall | interaction_f1 | false_complexity_count |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| synthetic_mixed_structure | 1.0000 | 1.0000 | 1.0000 | 0.3000 | 0.6000 | 0.4000 | 1.2000 |
+| synthetic_monotone_additive | 1.0000 | 1.0000 | 1.0000 | 1.0000 | 1.0000 | 1.0000 | 0.0000 |
+| synthetic_nonmonotone_marginals | 1.0000 | 1.0000 | 1.0000 | 1.0000 | 1.0000 | 1.0000 | 0.0000 |
+| synthetic_sparse_interactions | 1.0000 | 1.0000 | 1.0000 | 0.4000 | 0.8000 | 0.5333 | 1.6000 |
+
+## Notes
+
+- This is a lightweight proof-of-concept, not the formal paper experiment.
+- Models are thresholded score models implemented with `numpy/pandas` only.
+- M3/M5 non-monotonicity detection is based on derivative sign changes in quadratic marginal terms.
+- M4/M5 interactions are selected from train residual correlations, capped by `max_interactions`.
+- APSS selection minimizes validation ordinal MAE plus a small complexity penalty.

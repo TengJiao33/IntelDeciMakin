@@ -1,0 +1,39 @@
+{
+  "args": {
+    "manifest": "data/metadata/bench_manifest.csv",
+    "out_dir": ".\\experiments\\20260629-apss-poc-new-data-smoke",
+    "groups": [
+      "education_evaluation",
+      "health_risk_evaluation",
+      "toc_uco_ordinal_classification"
+    ],
+    "seeds": 2,
+    "max_interactions": 2,
+    "ridge_alpha": 1.0,
+    "complexity_lambda": 0.05,
+    "train_frac": 0.6,
+    "val_frac": 0.2,
+    "limit_datasets": [
+      "student_performance_math_no_prior_grades",
+      "student_performance_math_with_prior_grades",
+      "higher_education_students_performance",
+      "maternal_health_risk",
+      "toc_uco_oc03_balancescale",
+      "toc_uco_oc04_heartdisease",
+      "toc_uco_oc05_lev",
+      "toc_uco_oc06_esl"
+    ]
+  },
+  "datasets": [
+    "higher_education_students_performance",
+    "student_performance_math_no_prior_grades",
+    "student_performance_math_with_prior_grades",
+    "maternal_health_risk",
+    "toc_uco_oc03_balancescale",
+    "toc_uco_oc04_heartdisease",
+    "toc_uco_oc05_lev",
+    "toc_uco_oc06_esl"
+  ],
+  "output_dir": "experiments\\20260629-apss-poc-new-data-smoke",
+  "runtime_seconds": 0.19806551933288574
+}

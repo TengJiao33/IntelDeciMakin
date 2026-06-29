@@ -1,0 +1,9 @@
+group,datasets,total_alternatives,min_criteria,max_criteria
+education_evaluation,5,2233,21,30
+health_risk_evaluation,1,1014,6,6
+monotone_classification,9,6045,4,8
+polish_research_units,6,1986,4,4
+qs_university_rankings,4,1973,6,10
+synthetic_structure_recovery,4,4800,6,6
+toc_uco_ordinal_classification,22,55243,4,91
+wine_quality,3,12994,11,11

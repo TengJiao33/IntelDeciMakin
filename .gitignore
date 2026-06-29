@@ -1,0 +1,39 @@
+# OS/editor noise
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Python/cache artifacts
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.venv/
+venv/
+
+# Local environment and credentials
+.env
+.env.*
+*.pem
+*.key
+*.ppk
+id_rsa
+id_ed25519
+
+# Local/private operational notes
+docs/remote_compute/
+
+# Raw downloads and binary/source documents that should not be published publicly
+data/raw/
+*.pdf
+*.doc
+*.docx
+*.ppt
+*.pptx
+literature/apss_related_work/extracted_text/
+
+# Nested vendored repository metadata
+skills/.git/
+plugins/**/.git/

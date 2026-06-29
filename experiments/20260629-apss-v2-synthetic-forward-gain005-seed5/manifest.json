@@ -1,0 +1,27 @@
+{
+  "args": {
+    "manifest": "data/metadata/bench_manifest.csv",
+    "out_dir": ".\\experiments\\20260629-apss-v2-synthetic-forward-gain005-seed5",
+    "groups": [
+      "synthetic_structure_recovery"
+    ],
+    "seeds": 5,
+    "max_interactions": 4,
+    "interaction_selection": "forward",
+    "interaction_candidate_pool": 40,
+    "interaction_gain_threshold": 0.005,
+    "ridge_alpha": 1.0,
+    "complexity_lambda": 0.02,
+    "train_frac": 0.6,
+    "val_frac": 0.2,
+    "limit_datasets": null
+  },
+  "datasets": [
+    "synthetic_mixed_structure",
+    "synthetic_monotone_additive",
+    "synthetic_nonmonotone_marginals",
+    "synthetic_sparse_interactions"
+  ],
+  "output_dir": "experiments\\20260629-apss-v2-synthetic-forward-gain005-seed5",
+  "runtime_seconds": 0.4437296390533447
+}

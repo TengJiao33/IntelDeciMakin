@@ -1,0 +1,7 @@
+group,dataset_id,selected_base_model,count,frequency
+synthetic_structure_recovery,synthetic_mixed_structure,M5_full_flexible,5,1.0
+synthetic_structure_recovery,synthetic_monotone_additive,M1_linear_additive,5,1.0
+synthetic_structure_recovery,synthetic_nonmonotone_marginals,M3_nonmonotone_additive,4,0.8
+synthetic_structure_recovery,synthetic_nonmonotone_marginals,M5_full_flexible,1,0.2
+synthetic_structure_recovery,synthetic_sparse_interactions,M4_sparse_interaction,4,0.8
+synthetic_structure_recovery,synthetic_sparse_interactions,M5_full_flexible,1,0.2
